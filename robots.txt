@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /netlify.toml
+Disallow: /.netlify/
+
+Sitemap: https://jwordenasphaltpaving.com/sitemap.xml
