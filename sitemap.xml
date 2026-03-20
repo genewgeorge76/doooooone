@@ -1,147 +1,495 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://jwordenasphaltpaving.com/</loc>
+    <loc>https://jwordenasphaltpaving.com/ashland-asphalt-paving</loc>
     <lastmod>2026-03-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20161031_035012000_iOS.jpg</image:loc>
+      <image:caption>Commercial asphalt paving project completed in Ashland Virginia by J. Worden &amp; Sons</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20170220_232920000_iOS.jpg</image:loc>
+      <image:caption>New asphalt driveway installation in Ashland Virginia by J. Worden &amp; Sons</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20170220_232922000_iOS.jpg</image:loc>
+      <image:caption>Commercial parking lot paving with CAT roller in Ashland Virginia</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://jwordenasphaltpaving.com/asphalt-driveway-paving</loc>
     <lastmod>2026-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20170915_214013569_iOS.jpg</image:loc>
+      <image:caption>Asphalt driveway installation at residential property Richmond VA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20171113_184141474_iOS.jpg</image:loc>
+      <image:caption>Residential asphalt driveway paving with clean edges Richmond VA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20180209_014725276_iOS.jpg</image:loc>
+      <image:caption>Fresh asphalt driveway paved by J. Worden &amp; Sons Richmond VA</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://jwordenasphaltpaving.com/asphalt-paving-cost-virginia</loc>
     <lastmod>2026-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20210623_130503705_iOS.jpg</image:loc>
+      <image:caption>Asphalt driveway installation Richmond VA — typical driveway paving project</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20210707_223727000_iOS.jpg</image:loc>
+      <image:caption>Commercial parking lot paving project with crew Richmond VA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/IMG_20170627_101936.jpg</image:loc>
+      <image:caption>Sealcoating applied to driveway Central Virginia</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://jwordenasphaltpaving.com/asphalt-repair</loc>
     <lastmod>2026-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20160807_010722000_iOS.jpg</image:loc>
+      <image:caption>Commercial parking lot excavation and demolition Richmond VA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20161031_035012000_iOS.jpg</image:loc>
+      <image:caption>Excavation site preparation commercial paving Richmond VA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20170220_232920000_iOS.jpg</image:loc>
+      <image:caption>Parking lot repair in progress Richmond VA</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://jwordenasphaltpaving.com/chester-va-paving</loc>
     <lastmod>2026-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20170708_224336882_iOS.jpg</image:loc>
+      <image:caption>New asphalt driveway installation completed by J. Worden &amp; Sons in Chester VA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20170915_214013569_iOS.jpg</image:loc>
+      <image:caption>Commercial sealcoating service completed in Chester VA by J. Worden &amp; Sons</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20171113_184141474_iOS.jpg</image:loc>
+      <image:caption>Commercial parking lot paving project in Chester Virginia by J. Worden &amp; Sons</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://jwordenasphaltpaving.com/chesterfield-asphalt-paving</loc>
     <lastmod>2026-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20210114_203450394_iOS.jpg</image:loc>
+      <image:caption>Commercial sealcoating project completed in Chester VA Chesterfield County by J. Worden &amp; Sons</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20210623_130503705_iOS.jpg</image:loc>
+      <image:caption>Commercial parking lot paving in Chesterfield County Virginia by J. Worden &amp; Sons</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20210707_223727000_iOS.jpg</image:loc>
+      <image:caption>Residential asphalt driveway paving in Midlothian VA Chesterfield County</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://jwordenasphaltpaving.com/chip-and-tar</loc>
     <lastmod>2026-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20160721_204440000_iOS.jpg</image:loc>
+      <image:caption>Asphalt paving machine laying surface treatment Central Virginia</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20160807_010722000_iOS.jpg</image:loc>
+      <image:caption>Rural driveway surface treatment Richmond VA area</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20161031_035012000_iOS.jpg</image:loc>
+      <image:caption>Completed chip seal driveway Richmond VA</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://jwordenasphaltpaving.com/cobblestone-paving</loc>
     <lastmod>2026-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20170522_015146267_iOS.jpg</image:loc>
+      <image:caption>Cobblestone driveway paving tree-lined pathway Sleepy Hollow VA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20170708_224336882_iOS.jpg</image:loc>
+      <image:caption>Cobblestone paver installation brick pattern Tuckahoe VA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20170915_214013569_iOS.jpg</image:loc>
+      <image:caption>Cobblestone entranceway Windsor Farms VA</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://jwordenasphaltpaving.com/concrete-paving</loc>
     <lastmod>2026-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20180209_022434599_iOS.jpg</image:loc>
+      <image:caption>Concrete paving installation residential property Richmond VA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20210114_203450394_iOS.jpg</image:loc>
+      <image:caption>Commercial paving project with concrete curbing Richmond VA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20210623_130503705_iOS.jpg</image:loc>
+      <image:caption>Circular driveway with concrete curbing colonial home Virginia</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://jwordenasphaltpaving.com/glen-allen-asphalt-paving</loc>
     <lastmod>2026-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/IMG_20170628_204845.jpg</image:loc>
+      <image:caption>Commercial asphalt paving project completed in Glen Allen Virginia by J. Worden &amp; Sons</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20160721_204440000_iOS.jpg</image:loc>
+      <image:caption>New asphalt driveway installation in Glen Allen Virginia by J. Worden &amp; Sons</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20160807_010722000_iOS.jpg</image:loc>
+      <image:caption>Commercial parking lot paving with CAT roller in Glen Allen Virginia</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://jwordenasphaltpaving.com/grading-excavation</loc>
     <lastmod>2026-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20170220_232922000_iOS.jpg</image:loc>
+      <image:caption>Excavation and site preparation commercial paving Richmond VA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20170522_015146267_iOS.jpg</image:loc>
+      <image:caption>Underground utility installation during excavation Richmond VA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20170708_224336882_iOS.jpg</image:loc>
+      <image:caption>Heavy equipment site preparation parking lot Richmond VA</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://jwordenasphaltpaving.com/henrico-asphalt-paving</loc>
     <lastmod>2026-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20180209_014725276_iOS.jpg</image:loc>
+      <image:caption>Asphalt paving project completed by J. Worden &amp; Sons in Henrico County Virginia</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20180209_022434599_iOS.jpg</image:loc>
+      <image:caption>Grading and excavation site preparation for asphalt in Henrico County Virginia</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20210114_203450394_iOS.jpg</image:loc>
+      <image:caption>Parking lot line striping and ADA marking in Henrico County Virginia by J. Worden &amp; Sons</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://jwordenasphaltpaving.com/</loc>
+    <lastmod>2026-03-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/IMG_20170627_101936.jpg</image:loc>
+      <image:caption>Commercial parking lot paving at KFC restaurant Richmond VA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/IMG_20170628_204845.jpg</image:loc>
+      <image:caption>ADA-compliant commercial parking lot line striping Richmond VA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20160721_204440000_iOS.jpg</image:loc>
+      <image:caption>Commercial asphalt paving crew at work Richmond VA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20160807_010722000_iOS.jpg</image:loc>
+      <image:caption>Commercial parking lot excavation Richmond VA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20161031_035012000_iOS.jpg</image:loc>
+      <image:caption>Large commercial parking lot asphalt paving Richmond VA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20170220_232920000_iOS.jpg</image:loc>
+      <image:caption>Commercial parking lot line striping completed Richmond VA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20170220_232922000_iOS.jpg</image:loc>
+      <image:caption>Fresh line striping commercial parking lot Richmond VA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20170522_015146267_iOS.jpg</image:loc>
+      <image:caption>Commercial parking lot paving at KFC restaurant in Richmond VA by J. Worden &amp; Sons</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20170708_224336882_iOS.jpg</image:loc>
+      <image:caption>ADA-compliant commercial parking lot with fresh line striping in Richmond VA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20170915_214013569_iOS.jpg</image:loc>
+      <image:caption>Commercial asphalt paving crew at work on job site in Richmond VA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20171113_184141474_iOS.jpg</image:loc>
+      <image:caption>Commercial parking lot excavation and demolition in Richmond VA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20180209_014725276_iOS.jpg</image:loc>
+      <image:caption>Large commercial parking lot asphalt paving project in Richmond VA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20180209_022434599_iOS.jpg</image:loc>
+      <image:caption>Commercial parking lot line striping completed in Richmond VA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20210114_203450394_iOS.jpg</image:loc>
+      <image:caption>Fresh line striping on commercial parking lot in Richmond VA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20210623_130503705_iOS.jpg</image:loc>
+      <image:caption>Asphalt paving crew with roller compactor on commercial job in Richmond VA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20210707_223727000_iOS.jpg</image:loc>
+      <image:caption>Asphalt paving machine laying fresh asphalt at commercial property Richmond VA</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://jwordenasphaltpaving.com/line-striping</loc>
     <lastmod>2026-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20161031_035012000_iOS.jpg</image:loc>
+      <image:caption>Freshly paved commercial parking lot with ADA markings Richmond VA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20170220_232920000_iOS.jpg</image:loc>
+      <image:caption>ADA-compliant commercial parking lot line striping Richmond VA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20170220_232922000_iOS.jpg</image:loc>
+      <image:caption>Fresh line striping commercial parking lot Richmond VA</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://jwordenasphaltpaving.com/mechanicsville-asphalt-paving</loc>
     <lastmod>2026-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20170915_214013569_iOS.jpg</image:loc>
+      <image:caption>Asphalt excavation and site preparation for driveway in Mechanicsville Virginia by J. Worden &amp; Sons</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20171113_184141474_iOS.jpg</image:loc>
+      <image:caption>Newly paved long asphalt driveway in Mechanicsville Virginia by J. Worden &amp; Sons</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20180209_014725276_iOS.jpg</image:loc>
+      <image:caption>Chip and tar surface treatment on rural driveway in Hanover County Virginia</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://jwordenasphaltpaving.com/midlothian-asphalt-paving</loc>
     <lastmod>2026-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://jwordenasphaltpaving.com/parking-lot-paving</loc>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://jwordenasphaltpaving.com/richmond-va-asphalt-paving</loc>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://jwordenasphaltpaving.com/richmond-va-paving</loc>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://jwordenasphaltpaving.com/sealcoating</loc>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://jwordenasphaltpaving.com/stone-masonry-paving</loc>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://jwordenasphaltpaving.com/ashland-asphalt-paving</loc>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20210623_130503705_iOS.jpg</image:loc>
+      <image:caption>Residential asphalt driveway paving in Midlothian VA Chesterfield County by J. Worden &amp; Sons</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20210707_223727000_iOS.jpg</image:loc>
+      <image:caption>Freshly sealcoated driveway in Midlothian Virginia by J. Worden &amp; Sons</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/IMG_20170627_101936.jpg</image:loc>
+      <image:caption>Asphalt excavation and site preparation for new driveway in Midlothian Virginia</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://jwordenasphaltpaving.com/new-kent-asphalt-paving</loc>
     <lastmod>2026-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20160807_010722000_iOS.jpg</image:loc>
+      <image:caption>Commercial asphalt paving project completed in New Kent Virginia by J. Worden &amp; Sons</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20161031_035012000_iOS.jpg</image:loc>
+      <image:caption>New asphalt driveway installation in New Kent Virginia by J. Worden &amp; Sons</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20170220_232920000_iOS.jpg</image:loc>
+      <image:caption>Commercial parking lot paving with CAT roller in New Kent Virginia</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://jwordenasphaltpaving.com/parking-lot-paving</loc>
+    <lastmod>2026-03-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20170708_224336882_iOS.jpg</image:loc>
+      <image:caption>Freshly paved commercial parking lot KFC by J. Worden &amp; Sons Richmond VA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20170915_214013569_iOS.jpg</image:loc>
+      <image:caption>Commercial parking lot paving KFC restaurant Richmond VA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20171113_184141474_iOS.jpg</image:loc>
+      <image:caption>Commercial parking lot with ADA handicap markings Richmond VA</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://jwordenasphaltpaving.com/richmond-va-asphalt-paving</loc>
+    <lastmod>2026-03-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20210114_203450394_iOS.jpg</image:loc>
+      <image:caption>Residential asphalt driveway paving completed by J. Worden &amp; Sons in Richmond VA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20210623_130503705_iOS.jpg</image:loc>
+      <image:caption>Asphalt repair and resurfacing project completed in Richmond Virginia by J. Worden &amp; Sons</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20210707_223727000_iOS.jpg</image:loc>
+      <image:caption>Commercial parking lot paving project near Richmond VA by J. Worden &amp; Sons</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://jwordenasphaltpaving.com/richmond-va-paving</loc>
+    <lastmod>2026-03-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20160721_204440000_iOS.jpg</image:loc>
+      <image:caption>New asphalt driveway installation at sunset in Richmond Virginia by J. Worden &amp; Sons</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20160807_010722000_iOS.jpg</image:loc>
+      <image:caption>Commercial parking lot paving with CAT roller crew in Richmond Virginia</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20161031_035012000_iOS.jpg</image:loc>
+      <image:caption>Freshly sealcoated curved asphalt driveway in Richmond Virginia</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://jwordenasphaltpaving.com/sealcoating</loc>
+    <lastmod>2026-03-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20170522_015146267_iOS.jpg</image:loc>
+      <image:caption>Fresh asphalt driveway sealcoating Richmond VA by J. Worden &amp; Sons</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20170708_224336882_iOS.jpg</image:loc>
+      <image:caption>Commercial parking lot line striping after sealcoating Richmond VA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20170915_214013569_iOS.jpg</image:loc>
+      <image:caption>Freshly sealcoated residential driveway Richmond VA</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://jwordenasphaltpaving.com/short-pump-asphalt-paving</loc>
     <lastmod>2026-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20180209_022434599_iOS.jpg</image:loc>
+      <image:caption>Commercial asphalt paving project completed in Short Pump Virginia by J. Worden &amp; Sons</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20210114_203450394_iOS.jpg</image:loc>
+      <image:caption>New asphalt driveway installation in Short Pump Virginia by J. Worden &amp; Sons</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20210623_130503705_iOS.jpg</image:loc>
+      <image:caption>Commercial parking lot paving with CAT roller in Short Pump Virginia</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://jwordenasphaltpaving.com/stone-masonry-paving</loc>
+    <lastmod>2026-03-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/IMG_20170628_204845.jpg</image:loc>
+      <image:caption>Custom flagstone walkway granite edging Tuckahoe VA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20160721_204440000_iOS.jpg</image:loc>
+      <image:caption>Cobblestone entranceway flagstone pavers Windsor Farms VA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20160807_010722000_iOS.jpg</image:loc>
+      <image:caption>Stone masonry sidewalk flagstone Westham Parkway VA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20161031_035012000_iOS.jpg</image:loc>
+      <image:caption>Beautiful custom stone masonry walkway paving in Richmond VA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20170220_232920000_iOS.jpg</image:loc>
+      <image:caption>Professional stone masonry and paver walkways installation Central Virginia</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://jwordenasphaltpaving.com/williamsburg-asphalt-paving</loc>
     <lastmod>2026-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20170708_224336882_iOS.jpg</image:loc>
+      <image:caption>Commercial asphalt paving project completed in Williamsburg Virginia by J. Worden &amp; Sons</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20170915_214013569_iOS.jpg</image:loc>
+      <image:caption>New asphalt driveway installation in Williamsburg Virginia by J. Worden &amp; Sons</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jwordenasphaltpaving.com/assets/images/20171113_184141474_iOS.jpg</image:loc>
+      <image:caption>Commercial parking lot paving with CAT roller in Williamsburg Virginia</image:caption>
+    </image:image>
   </url>
 </urlset>
