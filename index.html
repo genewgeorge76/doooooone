@@ -37,9 +37,11 @@
   <meta name="theme-color" content="#0a0a0a">
   <meta name="keywords" content="asphalt paving Richmond VA, driveway paving Chester VA, parking lot paving Chesterfield, sealcoating Richmond VA, paving contractor Central Virginia, asphalt paving Williamsburg VA">
 
-  <!-- Performance -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Stylesheet (loaded early for fast render) -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Preload LCP hero image -->
+  <link rel="preload" as="image" href="/.netlify/images?url=/assets/images/IMG_20170627_101936.jpg&w=800&q=80" fetchpriority="high">
 
   <!-- Schema Markup -->
   <script type="application/ld+json">
@@ -393,7 +395,6 @@
 }
   </script>
 
-  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -477,8 +478,8 @@
   <section class="photo-strip" aria-label="Commercial paving projects">
     <div class="strip-inner">
       <h2 class="visually-hidden">Commercial Project Photos</h2>
-      <img src="/.netlify/images?url=/assets/images/IMG_20170627_101936.jpg&w=800&q=80" alt="Commercial parking lot paving at KFC restaurant Richmond VA" width="400" height="300" loading="lazy" decoding="async">
-      <img src="/.netlify/images?url=/assets/images/IMG_20170628_204845.jpg&w=800&q=80" alt="ADA-compliant commercial parking lot line striping Richmond VA" width="400" height="300" loading="lazy" decoding="async">
+      <img src="/.netlify/images?url=/assets/images/IMG_20170627_101936.jpg&w=800&q=80" alt="Commercial parking lot paving at KFC restaurant Richmond VA" width="400" height="300" fetchpriority="high" decoding="async">
+      <img src="/.netlify/images?url=/assets/images/IMG_20170628_204845.jpg&w=800&q=80" alt="ADA-compliant commercial parking lot line striping Richmond VA" width="400" height="300" decoding="async">
       <img src="/.netlify/images?url=/assets/images/20160721_204440000_iOS.jpg&w=800&q=80" alt="Commercial asphalt paving crew at work Richmond VA" width="400" height="300" loading="lazy" decoding="async">
       <img src="/.netlify/images?url=/assets/images/20160807_010722000_iOS.jpg&w=800&q=80" alt="Commercial parking lot excavation Richmond VA" width="400" height="300" loading="lazy" decoding="async">
       <img src="/.netlify/images?url=/assets/images/20161031_035012000_iOS.jpg&w=800&q=80" alt="Large commercial parking lot asphalt paving Richmond VA" width="400" height="300" loading="lazy" decoding="async">
@@ -1012,5 +1013,18 @@
     <p>Virginia Class A Contractor License &middot; Fully Licensed &amp; Insured &middot; <a href="/">jwordenasphaltpaving.com</a></p>
   </div>
 </footer>
+<script>
+(function(){
+  var btn = document.querySelector('.nav-toggle');
+  var menu = document.getElementById('nav-menu');
+  if (btn && menu) {
+    btn.addEventListener('click', function() {
+      var expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      menu.style.display = expanded ? 'none' : 'flex';
+    });
+  }
+}());
+</script>
 </body>
 </html>
