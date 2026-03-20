@@ -1,6 +1,0 @@
-mkdir -p netlify/functions
-```
-
-3. Download the ping function I created (linked above) and save it to:
-```
-   netlify/functions/ping-search-engines.js
