@@ -4,9 +4,14 @@
 
 const SITEMAP_URL = "https://jwordenasphaltpaving.com/sitemap.xml";
 
+// Use Bing Webmaster API if an API key is provided in environment variables
+const BING_API_KEY = process.env.BING_WEBMASTER_API_KEY;
+
 const PING_URLS = [
   `https://www.google.com/ping?sitemap=${encodeURIComponent(SITEMAP_URL)}`,
-  `https://www.bing.com/ping?sitemap=${encodeURIComponent(SITEMAP_URL)}`,
+  BING_API_KEY 
+    ? `https://www.bing.com/webmaster/api.svc/json/SubmitSitemap?siteUrl=https://jwordenasphaltpaving.com&sitemapUrl=${encodeURIComponent(SITEMAP_URL)}&apikey=${BING_API_KEY}`
+    : `https://www.bing.com/ping?sitemap=${encodeURIComponent(SITEMAP_URL)}`,
 ];
 
 exports.handler = async function (event, context) {
