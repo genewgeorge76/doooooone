@@ -115,7 +115,7 @@ exports.handler = async (event) => {
 
     <div class="highlight">
       <strong>In the meantime, feel free to call us:</strong><br>
-      📞 <a href="tel:+18044461296">(804) 446-1296</a><br>
+      📞 <a href="tel:8047572546">(804) 757-2546</a><br>
       Hours: Mon–Fri 7am–6pm · Sat 8am–2pm
     </div>
 
