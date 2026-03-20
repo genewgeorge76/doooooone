@@ -1,0 +1,265 @@
+<!-- Navigation -->
+<header class="site-header" role="banner">
+  <nav class="nav-container" aria-label="Main navigation">
+    <div class="nav-brand">
+      <a href="/" aria-label="J. Worden Asphalt Paving - Home">
+        <span class="brand-name">J. Worden</span>
+        <span class="brand-tagline">Asphalt Paving</span>
+      </a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation menu" (click)="menuOpen = !menuOpen" [attr.aria-expanded]="menuOpen">
+      <span class="hamburger"></span>
+    </button>
+    <ul class="nav-links" [class.open]="menuOpen" role="menubar">
+      <li role="none"><a href="#services" role="menuitem" (click)="menuOpen = false">Services</a></li>
+      <li role="none"><a href="#about" role="menuitem" (click)="menuOpen = false">About</a></li>
+      <li role="none"><a href="#why-us" role="menuitem" (click)="menuOpen = false">Why Us</a></li>
+      <li role="none"><a href="#testimonials" role="menuitem" (click)="menuOpen = false">Testimonials</a></li>
+      <li role="none"><a href="#contact" role="menuitem" class="nav-cta" (click)="menuOpen = false">Free Estimate</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero" id="home" aria-labelledby="hero-heading">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 id="hero-heading">Professional Asphalt Paving You Can Trust</h1>
+    <p class="hero-subtitle">Driveways, parking lots, and commercial paving done right — built to last with quality materials and expert craftsmanship.</p>
+    <div class="hero-cta">
+      <a href="#contact" class="btn btn-primary">Get a Free Estimate</a>
+      <a href="#services" class="btn btn-secondary">Our Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section class="services" id="services" aria-labelledby="services-heading">
+  <div class="container">
+    <h2 id="services-heading">Our Paving Services</h2>
+    <p class="section-subtitle">From new installations to repairs, we deliver quality results on every project.</p>
+    <div class="services-grid">
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="28" width="48" height="8" rx="2" fill="currentColor"/><rect x="12" y="20" width="40" height="8" rx="2" fill="currentColor" opacity="0.7"/><rect x="4" y="36" width="56" height="12" rx="2" fill="currentColor" opacity="0.5"/><rect x="16" y="48" width="8" height="8" rx="1" fill="currentColor"/><rect x="40" y="48" width="8" height="8" rx="1" fill="currentColor"/></svg>
+        </div>
+        <h3>Asphalt Paving</h3>
+        <p>New driveway installations and full-depth asphalt paving for residential and commercial properties. We use high-quality hot-mix asphalt for a smooth, durable finish.</p>
+      </article>
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 48h48v4H8z" fill="currentColor" opacity="0.5"/><path d="M12 36h40v12H12z" fill="currentColor" opacity="0.7"/><path d="M16 36V24l16-8 16 8v12" stroke="currentColor" stroke-width="3" fill="none"/><circle cx="32" cy="30" r="4" fill="currentColor"/></svg>
+        </div>
+        <h3>Sealcoating</h3>
+        <p>Protect your investment with professional sealcoating. Our coal-tar or asphalt-based sealers shield against UV damage, water penetration, and chemical spills.</p>
+      </article>
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="40" width="56" height="16" rx="2" fill="currentColor" opacity="0.5"/><path d="M20 40V28h24v12" stroke="currentColor" stroke-width="3" fill="none"/><path d="M28 28V20h8v8" stroke="currentColor" stroke-width="2" fill="currentColor" opacity="0.7"/><rect x="16" y="44" width="12" height="8" rx="1" fill="currentColor"/><rect x="36" y="44" width="12" height="8" rx="1" fill="currentColor"/></svg>
+        </div>
+        <h3>Parking Lot Paving</h3>
+        <p>Complete parking lot solutions including paving, striping, ADA compliance, drainage design, and ongoing maintenance programs for commercial properties.</p>
+      </article>
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="32" width="48" height="20" rx="2" fill="currentColor" opacity="0.4"/><path d="M24 32V16" stroke="currentColor" stroke-width="3"/><path d="M40 32V16" stroke="currentColor" stroke-width="3"/><path d="M18 32V20" stroke="currentColor" stroke-width="2" opacity="0.6"/><path d="M46 32V20" stroke="currentColor" stroke-width="2" opacity="0.6"/><circle cx="32" cy="12" r="6" fill="currentColor" opacity="0.7"/></svg>
+        </div>
+        <h3>Asphalt Repair</h3>
+        <p>Pothole filling, crack sealing, and asphalt patching to restore your surfaces. We fix problems at the root to prevent recurring damage and costly replacements.</p>
+      </article>
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="44" width="48" height="8" rx="2" fill="currentColor" opacity="0.5"/><path d="M12 44L32 20l20 24" fill="currentColor" opacity="0.3"/><path d="M20 44L32 28l12 16" fill="currentColor" opacity="0.7"/></svg>
+        </div>
+        <h3>Grading &amp; Excavation</h3>
+        <p>Proper site preparation is key to long-lasting pavement. We provide grading, excavation, and base installation services for a solid foundation.</p>
+      </article>
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="40" width="48" height="12" rx="2" fill="currentColor" opacity="0.5"/><rect x="12" y="32" width="40" height="8" rx="1" fill="currentColor" opacity="0.7"/><line x1="20" y1="40" x2="20" y2="52" stroke="white" stroke-width="2"/><line x1="32" y1="40" x2="32" y2="52" stroke="white" stroke-width="2"/><line x1="44" y1="40" x2="44" y2="52" stroke="white" stroke-width="2"/></svg>
+        </div>
+        <h3>Line Striping</h3>
+        <p>Crisp, visible parking lot striping and road markings. We handle handicap spaces, fire lanes, directional arrows, and custom layouts to code.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="about" id="about" aria-labelledby="about-heading">
+  <div class="container">
+    <div class="about-content">
+      <div class="about-text">
+        <h2 id="about-heading">Built on Quality. Driven by Reputation.</h2>
+        <p>J. Worden Asphalt Paving has been delivering reliable, high-quality paving solutions for homeowners, businesses, and municipalities. We take pride in every project — from a simple driveway repair to a full commercial parking lot installation.</p>
+        <p>Our team brings years of hands-on experience, the best equipment in the industry, and a commitment to doing the job right the first time. We stand behind our work with a satisfaction guarantee because your property deserves nothing less.</p>
+        <ul class="about-highlights">
+          <li>Fully licensed &amp; insured</li>
+          <li>Free, no-obligation estimates</li>
+          <li>Residential &amp; commercial expertise</li>
+          <li>Quality materials &amp; equipment</li>
+        </ul>
+      </div>
+      <div class="about-stats">
+        <div class="stat">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Satisfaction Guarantee</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">Free</span>
+          <span class="stat-label">Estimates &amp; Consultations</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">Pro</span>
+          <span class="stat-label">Licensed &amp; Insured</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section class="why-us" id="why-us" aria-labelledby="why-us-heading">
+  <div class="container">
+    <h2 id="why-us-heading">Why Choose J. Worden Asphalt Paving?</h2>
+    <div class="features-grid">
+      <div class="feature">
+        <div class="feature-number" aria-hidden="true">01</div>
+        <h3>Quality Materials</h3>
+        <p>We only use premium-grade asphalt and materials sourced from trusted suppliers to ensure lasting durability.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-number" aria-hidden="true">02</div>
+        <h3>Expert Crew</h3>
+        <p>Our experienced team brings skill and precision to every project, no matter the size or complexity.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-number" aria-hidden="true">03</div>
+        <h3>Fair Pricing</h3>
+        <p>Competitive rates with transparent quotes. No hidden fees, no surprises — just honest pricing for quality work.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-number" aria-hidden="true">04</div>
+        <h3>On-Time Delivery</h3>
+        <p>We respect your schedule. Projects are completed on time and on budget, with minimal disruption to your property.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials" id="testimonials" aria-labelledby="testimonials-heading">
+  <div class="container">
+    <h2 id="testimonials-heading">What Our Customers Say</h2>
+    <div class="testimonials-grid">
+      <blockquote class="testimonial">
+        <p>"J. Worden did an outstanding job on our driveway. The crew was professional, showed up on time, and the finished product looks amazing. Highly recommend!"</p>
+        <footer>
+          <cite>— Satisfied Homeowner</cite>
+        </footer>
+      </blockquote>
+      <blockquote class="testimonial">
+        <p>"We hired them for our commercial parking lot and couldn't be happier. The work was done efficiently and the lot looks brand new. Great value for the price."</p>
+        <footer>
+          <cite>— Local Business Owner</cite>
+        </footer>
+      </blockquote>
+      <blockquote class="testimonial">
+        <p>"From the free estimate to the final sealcoat, every step was handled with care. They explained the process and delivered exactly what they promised."</p>
+        <footer>
+          <cite>— Residential Customer</cite>
+        </footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- Contact / CTA Section -->
+<section class="contact" id="contact" aria-labelledby="contact-heading">
+  <div class="container">
+    <div class="contact-content">
+      <div class="contact-info">
+        <h2 id="contact-heading">Get Your Free Estimate Today</h2>
+        <p>Ready to get started? Contact J. Worden Asphalt Paving for a free, no-obligation estimate on your next project. We serve residential and commercial customers.</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <strong>Website</strong>
+            <span>jwordenasphaltpaving.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-wrapper">
+        <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/">
+          <input type="hidden" name="form-name" value="contact">
+          <p class="hidden" aria-hidden="true">
+            <label>Don't fill this out: <input name="bot-field"></label>
+          </p>
+          <div class="form-group">
+            <label for="name">Your Name *</label>
+            <input type="text" id="name" name="name" required placeholder="John Smith" autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" required placeholder="(555) 123-4567" autocomplete="tel">
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label for="service">Service Needed</label>
+            <select id="service" name="service">
+              <option value="">Select a service...</option>
+              <option value="asphalt-paving">Asphalt Paving</option>
+              <option value="sealcoating">Sealcoating</option>
+              <option value="parking-lot">Parking Lot Paving</option>
+              <option value="repair">Asphalt Repair</option>
+              <option value="grading">Grading &amp; Excavation</option>
+              <option value="striping">Line Striping</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Project Details</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us about your project..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Request Free Estimate</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <span class="brand-name">J. Worden</span>
+        <span class="brand-tagline">Asphalt Paving</span>
+        <p class="footer-description">Professional asphalt paving, sealcoating, and repair services. Quality workmanship guaranteed.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Asphalt Paving</a></li>
+          <li><a href="#services">Sealcoating</a></li>
+          <li><a href="#services">Parking Lot Paving</a></li>
+          <li><a href="#services">Asphalt Repair</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 J. Worden Asphalt Paving. All rights reserved.</p>
+    </div>
+  </div>
+</footer>

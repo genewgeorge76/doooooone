@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asphalt Paving Richmond VA | J. Worden & Sons</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Oswald:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --black:#0a0a0a;--black2:#111111;--black3:#1a1a1a;--offblack:#161616;
+      --yellow:#f5c400;--yellow2:#e0b000;--yellow3:#ffd740;--white:#ffffff;
+      --stripe:repeating-linear-gradient(-45deg,transparent,transparent 10px,rgba(245,196,0,.055) 10px,rgba(245,196,0,.055) 20px);
+    }
+    html{scroll-behavior:smooth}
+    body{font-family:'Source Sans 3',sans-serif;background:var(--black);color:var(--white);overflow-x:hidden}
+    nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:var(--black);border-bottom:4px solid var(--yellow);padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:70px}
+    .nav-brand{display:flex;flex-direction:column;line-height:1.15}
+    .nav-brand strong{font-family:'Oswald',sans-serif;font-weight:700;font-size:1.15rem;color:var(--yellow);letter-spacing:.04em;text-transform:uppercase}
+    .nav-brand span{font-size:.65rem;color:rgba(255,255,255,.35);letter-spacing:.08em;text-transform:uppercase}
+    .nav-links{display:flex;align-items:center;gap:2rem;list-style:none}
+    .nav-links a{color:rgba(255,255,255,.7);text-decoration:none;font-family:'Oswald',sans-serif;font-size:.85rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;transition:color .2s}
+    .nav-links a:hover{color:var(--yellow)}
+    .nav-cta{background:var(--yellow)!important;color:var(--black)!important;padding:.5rem 1.4rem!important;font-weight:700!important;clip-path:polygon(6px 0%,100% 0%,calc(100% - 6px) 100%,0% 100%)}
+    .nav-cta:hover{background:var(--yellow3)!important}
+    .has-drop>a{display:flex;align-items:center;gap:5px}
+    .has-drop>a::after{content:'▾';font-size:.7rem;color:var(--yellow)}
+    .dropdown{display:none;position:absolute;top:calc(100% + 4px);left:0;background:var(--black2);border:1px solid rgba(245,196,0,.25);border-top:3px solid var(--yellow);min-width:240px;z-index:100}
+    .has-drop{position:relative}.has-drop:hover .dropdown{display:block}
+    .dropdown a{display:block;padding:.75rem 1.2rem;color:rgba(255,255,255,.7);font-size:.8rem;border-bottom:1px solid rgba(255,255,255,.05);text-decoration:none;font-family:'Oswald',sans-serif;letter-spacing:.08em;text-transform:uppercase}
+    .dropdown a:hover{background:var(--black3);color:var(--yellow)}
+    .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+    .hamburger span{display:block;width:26px;height:2px;background:var(--yellow)}
+    .mobile-menu{display:none;position:fixed;top:70px;left:0;right:0;background:var(--black2);z-index:999;padding:1.5rem 5%;border-bottom:3px solid var(--yellow)}
+    .mobile-menu.open{display:block}
+    .mobile-menu ul{list-style:none;display:flex;flex-direction:column;gap:1.2rem}
+    .mobile-menu a{color:rgba(255,255,255,.85);text-decoration:none;font-family:'Oswald',sans-serif;font-size:1rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase}
+    .mobile-cta{display:inline-block;margin-top:.8rem;background:var(--yellow);color:var(--black)!important;padding:.75rem 1.8rem;font-weight:700!important;clip-path:polygon(6px 0%,100% 0%,calc(100% - 6px) 100%,0% 100%)}
+    .divider{height:7px;background:repeating-linear-gradient(90deg,var(--yellow) 0px,var(--yellow) 44px,var(--black) 44px,var(--black) 60px)}
+    #hero{min-height:100vh;background:var(--black);display:flex;align-items:center;position:relative;overflow:hidden;padding:110px 5% 80px}
+    #hero::before{content:'';position:absolute;top:0;right:0;width:42%;height:100%;background:linear-gradient(155deg,var(--yellow) 0%,var(--yellow2) 100%);clip-path:polygon(20% 0%,100% 0%,100% 100%,0% 100%);opacity:.07}
+    #hero::after{content:'';position:absolute;inset:0;background:var(--stripe);pointer-events:none}
+    .hero-inner{position:relative;z-index:2;max-width:820px}
+    .hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--yellow);color:var(--black);font-family:'Oswald',sans-serif;font-weight:700;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;padding:.35rem 1rem;clip-path:polygon(4px 0%,100% 0%,calc(100% - 4px) 100%,0% 100%);margin-bottom:1.8rem}
+    .hero-eyebrow::before{content:'▲';font-size:.55rem}
+    .hero-inner h1{font-family:'Black Han Sans',sans-serif;font-size:clamp(3rem,7.5vw,6.5rem);line-height:.92;color:var(--white);text-transform:uppercase;margin-bottom:.3rem}
+    .hero-inner h1 span{color:var(--yellow);display:block}
+    .hero-sub{font-size:1.05rem;color:rgba(255,255,255,.55);line-height:1.75;margin:1.6rem 0 2.5rem;max-width:560px;font-weight:300;border-left:3px solid var(--yellow);padding-left:1.2rem}
+    .hero-btns{display:flex;flex-wrap:wrap;gap:1rem;margin-bottom:3.5rem}
+    .btn-primary{background:var(--yellow);color:var(--black);padding:1rem 2.4rem;font-weight:700;font-family:'Oswald',sans-serif;font-size:1rem;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;transition:all .2s;display:inline-block;clip-path:polygon(8px 0%,100% 0%,calc(100% - 8px) 100%,0% 100%)}
+    .btn-primary:hover{background:var(--yellow3);transform:translateY(-2px)}
+    .btn-ghost{border:2px solid rgba(255,255,255,.25);color:var(--white);padding:1rem 2.4rem;font-family:'Oswald',sans-serif;font-size:1rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;transition:all .2s;display:inline-block}
+    .btn-ghost:hover{border-color:var(--yellow);color:var(--yellow)}
+    .hero-stats{display:flex;gap:3rem;flex-wrap:wrap}
+    .hero-stat strong{display:block;font-family:'Black Han Sans',sans-serif;font-size:2.6rem;color:var(--yellow);line-height:1}
+    .hero-stat span{font-size:.7rem;color:rgba(255,255,255,.4);font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+    section{padding:100px 5%}
+    .eyebrow{font-family:'Oswald',sans-serif;font-size:.7rem;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--yellow);margin-bottom:.8rem;display:flex;align-items:center;gap:10px}
+    .eyebrow::before{content:'';display:block;width:26px;height:2px;background:var(--yellow)}
+    .eyebrow.center{justify-content:center}.eyebrow.center::before{display:none}
+    .eyebrow.dark{color:var(--black)}.eyebrow.dark::before{background:var(--black)}
+    h2.section-title{font-family:'Black Han Sans',sans-serif;font-size:clamp(2rem,4.5vw,3.4rem);line-height:.95;color:var(--white);text-transform:uppercase;margin-bottom:1rem}
+    h2.section-title.dark{color:var(--black)}
+    .section-body{font-size:.97rem;color:rgba(255,255,255,.5);line-height:1.75;font-weight:300;max-width:560px}
+    .section-body.dark{color:rgba(0,0,0,.6)}
+    #services{background:var(--offblack)}
+    .services-hd{text-align:center;margin-bottom:3.5rem}
+    .services-hd .section-body{margin:0 auto}
+    .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2px}
+    .svc{background:var(--black2);padding:2.5rem 2rem;border-bottom:3px solid transparent;transition:all .25s;position:relative;overflow:hidden;text-decoration:none;display:block}
+    .svc::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--yellow);transform:scaleX(0);transition:transform .3s;transform-origin:left}
+    .svc:hover::after{transform:scaleX(1)}
+    .svc:hover{background:var(--black3);transform:translateY(-3px)}
+    .svc-num{font-family:'Black Han Sans',sans-serif;font-size:3.2rem;color:rgba(245,196,0,.1);line-height:1;margin-bottom:.8rem;display:block}
+    .svc h3{font-family:'Oswald',sans-serif;font-weight:700;font-size:1.05rem;color:var(--yellow);text-transform:uppercase;letter-spacing:.07em;margin-bottom:.7rem}
+    .svc p{font-size:.87rem;color:rgba(255,255,255,.45);line-height:1.65}
+    #about{background:var(--yellow)}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center}
+    .about-feats{display:flex;flex-direction:column;gap:.85rem;margin:1.8rem 0 2.5rem}
+    .feat{display:flex;align-items:center;gap:1rem;background:rgba(0,0,0,.1);padding:.9rem 1.1rem;border-left:4px solid var(--black)}
+    .feat span{font-size:.88rem;color:rgba(0,0,0,.75);font-weight:600}
+    .btn-dark{display:inline-block;background:var(--black);color:var(--yellow);padding:1rem 2.4rem;font-family:'Oswald',sans-serif;font-size:1rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;clip-path:polygon(8px 0%,100% 0%,calc(100% - 8px) 100%,0% 100%);transition:background .2s}
+    .btn-dark:hover{background:#222}
+    .about-stats{display:grid;grid-template-columns:1fr 1fr;gap:2px}
+    .astat{background:var(--black);padding:2.5rem 2rem;text-align:center}
+    .astat strong{display:block;font-family:'Black Han Sans',sans-serif;font-size:3rem;color:var(--yellow);line-height:1}
+    .astat span{font-size:.7rem;color:rgba(255,255,255,.4);letter-spacing:.14em;text-transform:uppercase;font-weight:600}
+    #areas{background:var(--black3)}
+    .areas-body{color:rgba(255,255,255,.45);font-size:.95rem;line-height:1.7;font-weight:300;max-width:580px;margin-bottom:2.2rem}
+    .zip-grid{display:flex;flex-wrap:wrap;gap:7px}
+    .zip{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);padding:6px 15px;font-size:.78rem;color:rgba(255,255,255,.55);font-family:'Oswald',sans-serif;letter-spacing:.06em;font-weight:600}
+    .zip.primary{background:var(--yellow);color:var(--black);border-color:var(--yellow);font-weight:700}
+    #faq{background:var(--black2)}
+    .faq-wrap{display:grid;grid-template-columns:1fr 1.5fr;gap:6rem;align-items:start}
+    .faq-list{display:flex;flex-direction:column;gap:2px}
+    details{background:var(--black3);border-left:3px solid transparent;padding:18px 22px;transition:border-color .2s}
+    details[open]{border-left-color:var(--yellow)}
+    summary{font-family:'Oswald',sans-serif;font-weight:600;font-size:.97rem;cursor:pointer;color:var(--white);list-style:none;display:flex;justify-content:space-between;align-items:center;letter-spacing:.04em;text-transform:uppercase}
+    summary::after{content:'+';font-size:1.4rem;color:var(--yellow);font-weight:300}
+    details[open] summary::after{content:'−'}
+    details p{margin-top:12px;color:rgba(255,255,255,.45);font-size:.9rem;line-height:1.7}
+    #testimonials{background:var(--offblack)}
+    .test-hd{text-align:center;margin-bottom:3.5rem}
+    .test-hd .eyebrow{justify-content:center}
+    .test-hd .eyebrow::before{display:none}
+    .test-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2px}
+    .tcard{background:var(--black2);padding:2.5rem 2rem;border-bottom:3px solid transparent;transition:border-color .2s}
+    .tcard:hover{border-bottom-color:var(--yellow)}
+    .stars{color:var(--yellow);font-size:1rem;letter-spacing:3px;margin-bottom:1.2rem}
+    .tcard blockquote{font-size:.9rem;color:rgba(255,255,255,.5);line-height:1.75;font-style:italic;margin-bottom:1.5rem}
+    .tcard strong{font-family:'Oswald',sans-serif;font-weight:600;font-size:.93rem;color:var(--yellow);display:block;letter-spacing:.06em;text-transform:uppercase}
+    .tcard em{font-size:.78rem;color:rgba(255,255,255,.3);font-style:normal}
+    #contact{background:var(--black)}
+    .contact-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:6rem;align-items:start}
+    .contact-details{display:flex;flex-direction:column;gap:1.2rem;margin:2rem 0 2rem}
+    .cdet{display:flex;align-items:flex-start;gap:1.1rem}
+    .cdet-icon{flex-shrink:0;width:40px;height:40px;background:var(--yellow);color:var(--black);display:flex;align-items:center;justify-content:center;font-size:1rem}
+    .cdet strong{display:block;font-family:'Oswald',sans-serif;font-size:.68rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--yellow);margin-bottom:.15rem}
+    .cdet p,.cdet a{font-size:.88rem;color:rgba(255,255,255,.6);line-height:1.5;text-decoration:none}
+    .cdet a:hover{color:var(--yellow)}
+    .form-wrap{background:var(--black3);padding:3rem;border-top:4px solid var(--yellow)}
+    .form-wrap h3{font-family:'Black Han Sans',sans-serif;font-size:1.55rem;color:var(--white);margin-bottom:1.8rem;text-transform:uppercase}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+    .fg{display:flex;flex-direction:column;gap:.35rem;margin-bottom:.9rem}
+    .fg label{font-family:'Oswald',sans-serif;font-size:.68rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.45)}
+    .fg input,.fg select,.fg textarea{background:var(--black2);border:1px solid rgba(255,255,255,.08);border-bottom:2px solid rgba(255,255,255,.13);padding:.72rem 1rem;font-family:'Source Sans 3',sans-serif;font-size:.9rem;color:var(--white);width:100%;transition:border-color .2s}
+    .fg input:focus,.fg select:focus,.fg textarea:focus{outline:none;border-bottom-color:var(--yellow)}
+    .fg select option{background:var(--black2)}
+    .fg textarea{resize:vertical;min-height:110px}
+    .form-submit{background:var(--yellow);color:var(--black);border:none;padding:1.1rem 2rem;font-family:'Oswald',sans-serif;font-size:1rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:all .2s;width:100%;clip-path:polygon(8px 0%,100% 0%,calc(100% - 8px) 100%,0% 100%)}
+    .form-submit:hover{background:var(--yellow3)}
+    footer{background:#050505;padding:60px 5% 30px}
+    .footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:3rem;margin-bottom:3rem}
+    .fbrand strong{font-family:'Oswald',sans-serif;font-weight:700;font-size:1.15rem;color:var(--yellow);display:block;margin-bottom:.2rem;text-transform:uppercase;letter-spacing:.05em}
+    .fbrand small{font-size:.63rem;color:rgba(255,255,255,.25);letter-spacing:.1em;text-transform:uppercase}
+    .fbrand p{font-size:.83rem;color:rgba(255,255,255,.28);line-height:1.7;margin-top:.9rem}
+    .fcol h4{font-family:'Oswald',sans-serif;font-weight:600;font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--yellow);margin-bottom:1.1rem}
+    .fcol ul{list-style:none;display:flex;flex-direction:column;gap:.55rem}
+    .fcol a{font-size:.83rem;color:rgba(255,255,255,.3);text-decoration:none;transition:color .2s}
+    .fcol a:hover{color:var(--yellow)}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,.05);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+    .footer-bottom p{font-size:.76rem;color:rgba(255,255,255,.18)}
+    .badge-card{display:flex;flex-direction:column;align-items:center;gap:.7rem;background:var(--black3);padding:2rem 1.5rem;text-decoration:none;border-bottom:3px solid transparent;transition:all .25s;text-align:center}
+    .badge-card:hover{border-bottom-color:var(--yellow);transform:translateY(-3px)}
+    .badge-icon{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .badge-name{font-family:'Oswald',sans-serif;font-weight:700;font-size:.95rem;color:var(--white);text-transform:uppercase;letter-spacing:.07em}
+    .badge-action{font-size:.75rem;color:var(--yellow);font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:.1em;text-transform:uppercase}
+    @media(max-width:1024px){.about-grid,.contact-grid,.faq-wrap{grid-template-columns:1fr;gap:3rem}.footer-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:768px){.nav-links{display:none}.hamburger{display:flex}section{padding:70px 4%}.footer-grid{grid-template-columns:1fr;gap:2rem}.form-row{grid-template-columns:1fr}.form-wrap{padding:1.8rem}}
+    @media(max-width:480px){.hero-stats{gap:1.8rem}}
+  </style>
+</head>
+<body>
+
+<nav role="navigation" aria-label="Main navigation">
+  <div class="nav-brand">
+    <strong>J. Worden &amp; Sons Asphalt Paving</strong>
+    <span>Asphalt Paving in Chester, Richmond, Chesterfield &amp; Henrico, VA</span>
+  </div>
+  <ul class="nav-links" role="list">
+    <li class="has-drop">
+      <a href="#services">Services</a>
+      <div class="dropdown">
+        <a href="asphalt-driveway-paving.html">Asphalt Driveway Paving</a>
+        <a href="parking-lot-paving.html">Parking Lot Paving</a>
+        <a href="sealcoating.html">Sealcoating</a>
+        <a href="asphalt-repair.html">Asphalt Repair &amp; Patching</a>
+        <a href="grading-excavation.html">Grading &amp; Excavation</a>
+        <a href="line-striping.html">Line Striping &amp; Marking</a>
+        <a href="chip-and-tar.html">Chip &amp; Tar</a>
+      </div>
+    </li>
+    <li><a href="#gallery">Our Work</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#contact" class="nav-cta">Contact</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Toggle menu" onclick="document.getElementById('mob').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mob">
+  <ul>
+    <li><a href="#services" onclick="document.getElementById('mob').classList.remove('open')">Services</a></li>
+    <li><a href="#gallery" onclick="document.getElementById('mob').classList.remove('open')">Our Work</a></li>
+    <li><a href="#about" onclick="document.getElementById('mob').classList.remove('open')">About Us</a></li>
+    <li><a href="#contact" class="mobile-cta" onclick="document.getElementById('mob').classList.remove('open')">Contact</a></li>
+  </ul>
+</div>
+
+<section id="hero" aria-label="Hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Richmond VA 23221 · Since 1984</div>
+    <h1>Paving the Way<span>for Over 40 Years</span></h1>
+    <p class="hero-sub">Your trusted experts in residential and commercial asphalt paving, repair, and sealcoating. Serving Chester, Richmond, Chesterfield &amp; Henrico, VA.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-primary">Get a Free Estimate</a>
+      <a href="tel:+18044461296" class="btn-ghost">📞 (804) 446-1296</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><strong>40+</strong><span>Years Experience</span></div>
+      <div class="hero-stat"><strong>4th</strong><span>Generation</span></div>
+      <div class="hero-stat"><strong>4.8★</strong><span>Houzz Rating</span></div>
+      <div class="hero-stat"><strong>4</strong><span>States Served</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="services" aria-labelledby="svc-h">
+  <div class="services-hd">
+    <div class="eyebrow center">What We Do</div>
+    <h2 class="section-title" id="svc-h">Asphalt Paving Services — Richmond VA</h2>
+    <p class="section-body" style="margin:0 auto">From new driveways in Richmond 23221 to large commercial lots across Central Virginia — expert craftsmanship on every project.</p>
+  </div>
+  <div class="services-grid">
+    <a class="svc" href="asphalt-driveway-paving.html"><span class="svc-num">01</span><h3>Asphalt Driveway Paving</h3><p>New driveway installations for Richmond VA 23221 homeowners. Built to last decades with proper base prep and premium materials.</p></a>
+    <a class="svc" href="parking-lot-paving.html"><span class="svc-num">02</span><h3>Parking Lot Paving</h3><p>Full commercial parking lot paving in Richmond VA. ADA-compliant design, proper drainage, and professional line striping.</p></a>
+    <a class="svc" href="sealcoating.html"><span class="svc-num">03</span><h3>Sealcoating Richmond VA</h3><p>Protective sealcoating that guards against UV rays, water damage, and oxidation — extending your pavement's life by years.</p></a>
+    <a class="svc" href="asphalt-repair.html"><span class="svc-num">04</span><h3>Asphalt Repair &amp; Patching</h3><p>Pothole patching, crack sealing, and surface repair in Richmond VA. Fast, affordable solutions that last.</p></a>
+    <a class="svc" href="grading-excavation.html"><span class="svc-num">05</span><h3>Grading &amp; Excavation</h3><p>Site preparation and base installation throughout Richmond VA &amp; Chesterfield — the foundation of lasting asphalt.</p></a>
+    <a class="svc" href="line-striping.html"><span class="svc-num">06</span><h3>Line Striping &amp; Marking</h3><p>Crisp parking lot striping, ADA handicap spaces, fire lanes, and directional arrows for Richmond VA businesses.</p></a>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="about" aria-labelledby="about-h">
+  <div class="about-grid">
+    <div>
+      <div class="eyebrow dark">About Us</div>
+      <h2 class="section-title dark" id="about-h">Built on Quality.<br>Driven by Reputation.</h2>
+      <p class="section-body dark">For over 40 years, J. Worden &amp; Sons Asphalt Paving has built a legacy of exceptional asphalt work across Richmond VA and Central Virginia. As a 4th-generation family business, our name is everything — it shows in every project we complete.</p>
+      <div class="about-feats">
+        <div class="feat"><span>✔ Licensed &amp; Insured in Virginia</span></div>
+        <div class="feat"><span>✔ Free Estimates — No Obligation</span></div>
+        <div class="feat"><span>✔ Residential &amp; Commercial — Any Size</span></div>
+        <div class="feat"><span>✔ Serving VA · NC · SC · GA Since 1984</span></div>
+        <div class="feat"><span>🏆 2023 Best of Houzz Service Award</span></div>
+      </div>
+      <a href="#contact" class="btn-dark">Start Your Project</a>
+    </div>
+    <div class="about-stats">
+      <div class="astat"><strong>40+</strong><span>Years in Business</span></div>
+      <div class="astat"><strong>4th</strong><span>Generation Family</span></div>
+      <div class="astat"><strong>4.8★</strong><span>Houzz Rating</span></div>
+      <div class="astat"><strong>4</strong><span>States Served</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="areas" aria-labelledby="areas-h">
+  <div class="eyebrow">Where We Work</div>
+  <h2 class="section-title" id="areas-h">Serving Richmond VA 23221 &amp; Central Virginia</h2>
+  <p class="areas-body">Our crews are local — no travel surcharge for any Richmond zip code or surrounding county.</p>
+  <div class="zip-grid">
+    <span class="zip primary">Richmond 23221 ⭐</span>
+    <span class="zip">23220</span><span class="zip">23222</span><span class="zip">23223</span><span class="zip">23224</span>
+    <span class="zip">23225</span><span class="zip">23226</span><span class="zip">23227</span><span class="zip">23228</span>
+    <span class="zip">23229</span><span class="zip">23230</span><span class="zip">23231</span><span class="zip">23234</span>
+    <span class="zip">23235</span><span class="zip">23236</span><span class="zip">23237</span><span class="zip">23238</span>
+    <span class="zip">Chesterfield County</span><span class="zip">Chester VA</span>
+    <span class="zip">Henrico County</span><span class="zip">Midlothian</span>
+    <span class="zip">Colonial Heights</span><span class="zip">Hopewell</span>
+    <span class="zip">Mechanicsville</span><span class="zip">Glen Allen</span>
+    <span class="zip">Short Pump</span><span class="zip">Ashland</span>
+  </div>
+</section>
+
+<section id="faq" aria-labelledby="faq-h">
+  <div class="faq-wrap">
+    <div>
+      <div class="eyebrow">FAQ</div>
+      <h2 class="section-title" id="faq-h">Common Questions</h2>
+      <p class="section-body">Everything Richmond VA homeowners &amp; businesses need to know before hiring a paving contractor.</p>
+    </div>
+    <div class="faq-list">
+      <details><summary>How much does asphalt paving cost in Richmond VA?</summary><p>Residential driveways typically run $3–$7 per sq ft. Commercial parking lots range $2–$5 per sq ft. Call (804) 446-1296 for a free estimate.</p></details>
+      <details><summary>Do you serve Richmond VA zip code 23221?</summary><p>Yes — 23221 is one of our primary service areas. We serve all Richmond VA zip codes plus Chesterfield, Chester, and Henrico with no travel surcharge.</p></details>
+      <details><summary>How long does an asphalt driveway last in Virginia?</summary><p>With proper installation and sealcoating every 3–5 years, a quality asphalt driveway in Virginia lasts 20–30 years. Our 40+ years of local experience means we build for Virginia's climate.</p></details>
+      <details><summary>Are you licensed and insured in Virginia?</summary><p>Yes. J. Worden &amp; Sons Asphalt Paving is fully licensed, bonded, and insured for all paving work in Virginia with complete liability and workers' compensation coverage.</p></details>
+      <details><summary>How soon can you start in Richmond VA?</summary><p>We typically schedule new projects within 1–3 weeks, weather permitting. Fill out the form below and we'll respond within 24 hours.</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials" aria-labelledby="test-h">
+  <div class="test-hd">
+    <div class="eyebrow center">Client Reviews</div>
+    <h2 class="section-title" id="test-h">What Richmond VA Customers Say</h2>
+  </div>
+  <div class="test-grid">
+    <div class="tcard"><div class="stars">★★★★★</div><blockquote>"Best paving company in Richmond VA. My driveway looks absolutely perfect. Professional, on time, and they cleaned up everything."</blockquote><strong>Michael T.</strong><em>Richmond, VA 23221 — Residential Driveway</em></div>
+    <div class="tcard"><div class="stars">★★★★★</div><blockquote>"Hired them for our entire commercial parking lot. Completed on schedule, under budget, and the finish is flawless."</blockquote><strong>Susan R.</strong><em>Richmond, VA — Commercial Parking Lot</em></div>
+    <div class="tcard"><div class="stars">★★★★★</div><blockquote>"4th-generation family business and it truly shows. Our curved driveway turned out better than we imagined. Fair price, beautiful results."</blockquote><strong>David &amp; Karen P.</strong><em>Chesterfield, VA — Driveway Paving</em></div>
+  </div>
+</section>
+
+<section id="contact" aria-labelledby="contact-h">
+  <div class="contact-grid">
+    <div>
+      <div class="eyebrow">Get In Touch</div>
+      <h2 class="section-title" id="contact-h">Request Your<br>Free Estimate</h2>
+      <p class="section-body" style="margin-bottom:0">Serving Richmond VA 23221 and all of Central Virginia. We respond within 24 hours.</p>
+      <div class="contact-details">
+        <div class="cdet"><div class="cdet-icon">📞</div><div><strong>Phone</strong><p><a href="tel:+18044461296">(804) 446-1296</a></p></div></div>
+        <div class="cdet"><div class="cdet-icon">📍</div><div><strong>Address</strong><p>1601 Ware Bottom Spring Rd, Ste 214<br>Chester, VA 23836</p></div></div>
+        <div class="cdet"><div class="cdet-icon">🕐</div><div><strong>Hours</strong><p>Mon–Fri: 7am–6pm · Sat: 8am–2pm</p></div></div>
+      </div>
+    </div>
+    <div class="form-wrap">
+      <h3>Send Us a Message</h3>
+      <div class="form-row">
+        <div class="fg"><label>Full Name *</label><input type="text" placeholder="John Smith"/></div>
+        <div class="fg"><label>Phone *</label><input type="tel" placeholder="(804) 555-0100"/></div>
+      </div>
+      <div class="form-row">
+        <div class="fg"><label>Email</label><input type="email" placeholder="john@example.com"/></div>
+        <div class="fg"><label>Your Zip Code</label><input type="text" placeholder="23221"/></div>
+      </div>
+      <div class="fg"><label>Service Needed</label>
+        <select>
+          <option>Select a service…</option>
+          <option>Asphalt Driveway Paving</option>
+          <option>Sealcoating</option>
+          <option>Parking Lot Paving</option>
+          <option>Asphalt Repair / Patching</option>
+          <option>Grading &amp; Excavation</option>
+          <option>Line Striping</option>
+          <option>Other / Not Sure</option>
+        </select>
+      </div>
+      <div class="fg"><label>Project Details</label><textarea placeholder="Tell us about your project — size, location, timeline…"></textarea></div>
+      <button class="form-submit">Request Free Estimate →</button>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--black2);padding:60px 5%">
+  <div style="text-align:center;margin-bottom:2.5rem">
+    <div class="eyebrow center">Verified Reviews</div>
+    <h2 class="section-title" style="font-size:clamp(1.6rem,3vw,2.4rem)">Find Us &amp; Read Our Reviews</h2>
+    <p style="font-size:.93rem;color:rgba(255,255,255,.45);max-width:500px;margin:0 auto;font-weight:300;line-height:1.7">We're proud of our reputation. Check us out on any of these platforms and see what Richmond VA customers are saying.</p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:2px;max-width:1100px;margin:0 auto">
+    <a href="#" class="badge-card"><div class="badge-icon" style="background:#4285F4"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg></div><span class="badge-name">Google</span><span class="badge-action">Read Reviews →</span></a>
+    <a href="#" class="badge-card"><div class="badge-icon" style="background:#1877F2"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></div><span class="badge-name">Facebook</span><span class="badge-action">Follow Us →</span></a>
+    <a href="#" class="badge-card"><div class="badge-icon" style="background:#4DBC15"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.18l7.5 3.75v7.14L12 18.82l-7.5-3.75V7.93L12 4.18z"/></svg></div><span class="badge-name">Houzz</span><span class="badge-action">4.8★ Rated →</span></a>
+    <a href="#" class="badge-card"><div class="badge-icon" style="background:#D32323"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg></div><span class="badge-name">Yelp</span><span class="badge-action">Read Reviews →</span></a>
+    <a href="#" class="badge-card"><div class="badge-icon" style="background:#F4821F"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div><span class="badge-name">Angi</span><span class="badge-action">View Profile →</span></a>
+    <a href="#" class="badge-card"><div class="badge-icon" style="background:#003F8A"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg></div><span class="badge-name">BBB</span><span class="badge-action">Accredited →</span></a>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<footer role="contentinfo">
+  <div class="footer-grid">
+    <div class="fbrand">
+      <strong>J. Worden &amp; Sons Asphalt Paving</strong>
+      <small>Asphalt Paving — Richmond VA 23221</small>
+      <p>Award-winning, 4th-generation asphalt paving contractor serving Richmond VA 23221, Chester, Chesterfield, Henrico &amp; all of Central Virginia since 1984.</p>
+    </div>
+    <div class="fcol">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="asphalt-driveway-paving.html">Asphalt Driveway Paving</a></li>
+        <li><a href="parking-lot-paving.html">Parking Lot Paving</a></li>
+        <li><a href="sealcoating.html">Sealcoating</a></li>
+        <li><a href="asphalt-repair.html">Asphalt Repair</a></li>
+        <li><a href="grading-excavation.html">Grading &amp; Excavation</a></li>
+        <li><a href="line-striping.html">Line Striping</a></li>
+        <li><a href="chip-and-tar.html">Chip &amp; Tar</a></li>
+      </ul>
+    </div>
+    <div class="fcol">
+      <h4>Service Areas</h4>
+      <ul>
+        <li><a href="#areas">Richmond VA 23221</a></li>
+        <li><a href="#areas">Chesterfield County VA</a></li>
+        <li><a href="#areas">Chester VA</a></li>
+        <li><a href="#areas">Henrico County VA</a></li>
+        <li><a href="#areas">Midlothian VA</a></li>
+        <li><a href="#areas">Colonial Heights VA</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 J. Worden &amp; Sons Asphalt Paving · Chester, VA · Licensed &amp; Insured · VA · NC · SC · GA</p>
+    <p>Asphalt Paving Richmond VA 23221 · (804) 446-1296</p>
+  </div>
+</footer>
+
+<script>
+  document.querySelector('.hamburger').addEventListener('click', () => {
+    document.getElementById('mob').classList.toggle('open');
+  });
+</script>
+</body>
+</html>
