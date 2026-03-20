@@ -18,7 +18,7 @@ It contains the source code for the **J. Worden & Sons Asphalt Paving** website 
 - `parking-lot-paving.html` — Parking lot paving service
 - `sealcoating.html` — Sealcoating service
 - `stone-masonry-paving.html` — Stone masonry paving service
-- Various location-specific pages (Ashland, Chester, Chesterfield, Glen Allen, Henrico, Mechanicsville, Midlothian, New Kent, Richmond, Short Pump, Williamsburg)
+- Various location-specific pages (Ashland, Charlottesville, Chester, Chesterfield, Downtown Richmond, Fairfax County, Glen Allen, Henrico, McLean, Mechanicsville, Midlothian, New Kent, Richmond, Short Pump, Sleepy Hollow, Tuckahoe, Virginia Beach, Williamsburg)
 
 ## Build
 
