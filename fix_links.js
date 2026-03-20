@@ -1,64 +1,38 @@
 const fs = require('fs');
-const path = require('path');
+const glob = require('glob');
 
-const dir = __dirname;
-const files = fs.readdirSync(dir).filter(f => f.endsWith('.html'));
+const files = glob.sync('*.html');
 
-const htmlFileNames = new Set(files.map(f => f.replace('.html', '')));
+files.forEach(file => {
+  let content = fs.readFileSync(file, 'utf8');
+  let changed = false;
 
-for (const file of files) {
-  const filePath = path.join(dir, file);
-  let content = fs.readFileSync(filePath, 'utf8');
-
-  // Replace href="/page" with href="/page.html"
-  content = content.replace(/href="\/([^"#\.]+)"/g, (match, p1) => {
-    if (htmlFileNames.has(p1)) {
-      return `href="/${p1}.html"`;
-    }
-    return match;
-  });
-
-  // Also replace canonical links: href="https://jwordenasphaltpaving.com/page"
-  content = content.replace(/href="https:\/\/jwordenasphaltpaving\.com\/([^"#\.]+)"/g, (match, p1) => {
-    if (htmlFileNames.has(p1)) {
-      return `href="https://jwordenasphaltpaving.com/${p1}.html"`;
-    }
-    return match;
-  });
-
-  // Also replace og:url
-  content = content.replace(/content="https:\/\/jwordenasphaltpaving\.com\/([^"#\.]+)"/g, (match, p1) => {
-    if (htmlFileNames.has(p1)) {
-      return `content="https://jwordenasphaltpaving.com/${p1}.html"`;
-    }
-    return match;
-  });
-
-  // Also replace in schema json-ld "url": "https://..."
-  content = content.replace(/"url":\s*"https:\/\/jwordenasphaltpaving\.com\/([^"#\.]+)"/g, (match, p1) => {
-    if (htmlFileNames.has(p1)) {
-      return `"url": "https://jwordenasphaltpaving.com/${p1}.html"`;
-    }
-    return match;
-  });
+  // Pattern 1: Asphalt Driveway Paving
+  const drivewayPattern = '<li><a href="/asphalt-driveway-paving.html">Asphalt Driveway Paving</a></li>';
+  const newDrivewayLinks = `<li><a href="/asphalt-driveway-paving.html">Asphalt Driveway Paving</a></li>\n          <li><a href="/residential-asphalt-paving.html">Residential Asphalt Paving</a></li>\n          <li><a href="/driveway-paving.html">Driveway Paving</a></li>`;
   
-  // schema "@id": "https://..."
-  content = content.replace(/"@id":\s*"https:\/\/jwordenasphaltpaving\.com\/([^"#\.]+)#([^"]*)"/g, (match, p1, p2) => {
-    if (htmlFileNames.has(p1)) {
-      return `"@id": "https://jwordenasphaltpaving.com/${p1}.html#${p2}"`;
+  if (content.includes(drivewayPattern)) {
+    // Only replace if not already added
+    if (!content.includes('residential-asphalt-paving.html')) {
+        // We use split and join to replace all occurrences
+        content = content.split(drivewayPattern).join(newDrivewayLinks);
+        changed = true;
     }
-    return match;
-  });
+  }
 
-  // schema "item": "https://..."
-  content = content.replace(/"item":\s*"https:\/\/jwordenasphaltpaving\.com\/([^"#\.]+)"/g, (match, p1) => {
-    if (htmlFileNames.has(p1)) {
-      return `"item": "https://jwordenasphaltpaving.com/${p1}.html"`;
+  // Pattern 2: Parking Lot Paving
+  const parkingPattern = '<li><a href="/parking-lot-paving.html">Parking Lot Paving</a></li>';
+  const newParkingLinks = `<li><a href="/parking-lot-paving.html">Parking Lot Paving</a></li>\n          <li><a href="/commercial-paving.html">Commercial Paving</a></li>`;
+  
+  if (content.includes(parkingPattern)) {
+    if (!content.includes('commercial-paving.html')) {
+        content = content.split(parkingPattern).join(newParkingLinks);
+        changed = true;
     }
-    return match;
-  });
+  }
 
-
-  fs.writeFileSync(filePath, content, 'utf8');
-}
-console.log('Fixed links in HTML files');
+  if (changed) {
+    fs.writeFileSync(file, content);
+    console.log(`Updated links in ${file}`);
+  }
+});
