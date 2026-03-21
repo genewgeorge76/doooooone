@@ -6,6 +6,12 @@
 [build.environment]
   NETLIFY_SKIP_PLUGINS = "@algolia/netlify-plugin-crawler"
 
+[[redirects]]
+  from = "https://www.jwordenasphaltpaving.com/*"
+  to = "https://jwordenasphaltpaving.com/:splat"
+  status = 301
+  force = true
+
 [[headers]]
   for = "/*"
   [headers.values]
