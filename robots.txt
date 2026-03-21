@@ -3,6 +3,7 @@ Allow: /
 Disallow: /package.json
 Disallow: /package-lock.json
 Disallow: /netlify.toml
+Allow: /.netlify/images
 Disallow: /.netlify/
 
 Sitemap: https://jwordenasphaltpaving.com/sitemap.xml
