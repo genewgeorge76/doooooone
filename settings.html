@@ -394,7 +394,7 @@
     function applyPrefs(prefs) {
       setChecked('toggle-analytics', prefs.analytics === true);
       setChecked('toggle-marketing', prefs.marketing === true);
-      setChecked('toggle-reminders', prefs.reminders !== false);
+      setChecked('toggle-reminders', prefs.reminders === true);
       setRadio('contact-method', prefs.contactMethod || 'phone');
     }
 
@@ -467,6 +467,7 @@
     if (rejectBtn) rejectBtn.addEventListener('click', function () {
       setChecked('modal-toggle-analytics', false);
       setChecked('modal-toggle-marketing', false);
+      setChecked('modal-toggle-reminders', false);
     });
 
     var saveModalBtn = document.getElementById('pref-save-modal');
