@@ -6,6 +6,12 @@
 [build.environment]
   NETLIFY_SKIP_PLUGINS = "@algolia/netlify-plugin-crawler"
 
+[[redirects]]
+  from = "https://www.jwordenasphaltpaving.com/*"
+  to = "https://jwordenasphaltpaving.com/:splat"
+  status = 301
+  force = true
+
 [[headers]]
   for = "/*"
   [headers.values]
@@ -60,6 +66,12 @@
   for = "/*.html"
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+    Content-Type = "application/xml"
 
 [[headers]]
   for = "/*.webmanifest"

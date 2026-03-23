@@ -1053,3 +1053,57 @@ textarea:focus-visible {
     align-items: flex-start;
   }
 }
+
+/* Page Hero (Subpages) */
+.page-hero {
+  background-color: var(--primary);
+  padding: 3rem 2rem;
+  text-align: center;
+  border-bottom: 4px solid var(--primary-dark);
+}
+
+.breadcrumb {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+.breadcrumb a {
+  color: #111;
+  font-weight: bold;
+  text-decoration: none;
+}
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.hero-eyebrow {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--primary-accessible);
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.page-hero h1 {
+  font-size: 2.5rem;
+  margin: 0.5rem 0 1rem;
+  color: #111;
+}
+
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #111;
+}
+
+.hero-badges span {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+}
