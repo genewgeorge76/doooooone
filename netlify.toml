@@ -5,6 +5,7 @@
 
 [build.environment]
   NETLIFY_SKIP_PLUGINS = "@algolia/netlify-plugin-crawler"
+  npm_config_registry = "https://registry.npmjs.org/"
 
 [[redirects]]
   from = "https://www.jwordenasphaltpaving.com/*"
